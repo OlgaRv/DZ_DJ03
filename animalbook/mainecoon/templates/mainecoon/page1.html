@@ -1,0 +1,31 @@
+{% extends 'mainecoon/base.html' %}
+{% load static %}
+
+{% block title %}Страница 1{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card mb-4">
+                <img src="{% static 'mainecoon/img/Photo1.png' %}" class="card-img-top" alt="Кот 1">
+                <div class="card-body">
+                    <h5 class="card-title">Кот 1</h5>
+                    <p class="card-text">Описание кота 1.</p>
+                    <a href="#" class="btn btn-primary">Подробнее</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card mb-4">
+                <img src="{% static 'mainecoon/img/Photo2.png' %}" class="card-img-top" alt="Кот 2">
+                <div class="card-body">
+                    <h5 class="card-title">Кот 2</h5>
+                    <p class="card-text">Описание кота 2.</p>
+                    <a href="#" class="btn btn-primary">Подробнее</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
