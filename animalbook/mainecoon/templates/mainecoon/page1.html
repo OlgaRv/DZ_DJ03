@@ -4,28 +4,34 @@
 {% block title %}Страница 1{% endblock %}
 
 {% block content %}
-<div class="container">
+<div class="container page-background">
     <div class="row">
         <div class="col-md-6">
             <div class="card mb-4">
-                <img src="{% static 'mainecoon/img/Photo1.png' %}" class="card-img-top" alt="Кот 1">
-                <div class="card-body">
-                    <h5 class="card-title">Кот 1</h5>
-                    <p class="card-text">Описание кота 1.</p>
-                    <a href="#" class="btn btn-primary">Подробнее</a>
+                <img src="{% static 'mainecoon/img/Photo1.png' %}" class="card-img-top" alt="Слишком большой кот">
+                <div class="card-body  text-center">
+                    <p class="card-text text-justify w-100">Да, это я нагадил мимо лотка. И что ты мне сделаешь?</p>
                 </div>
             </div>
         </div>
         <div class="col-md-6">
             <div class="card mb-4">
-                <img src="{% static 'mainecoon/img/Photo2.png' %}" class="card-img-top" alt="Кот 2">
-                <div class="card-body">
-                    <h5 class="card-title">Кот 2</h5>
-                    <p class="card-text">Описание кота 2.</p>
-                    <a href="#" class="btn btn-primary">Подробнее</a>
+                <p></p>
+                <img src="{% static 'mainecoon/img/Photo2.png' %}" class="card-img-top" alt="Кот-охранник">
+                <div class="card-body  text-center">
+                    <p class="card-text text-justify w-100">Домашний лев охраняет покой квартиры. Теперь все домочадцы в безопасности!</p>
                 </div>
             </div>
         </div>
-    </div>
+        <div class="col-md-12">
+            <h5 class="text-justify w-100">Мейн-кун — животинка довольно занятная. Вроде бы обычный кот, но ох уж эти габариты!
+                Взрослые зверюги вырастают под 15 килограмм живого шерстяного веса и
+                до 123 сантиметров от мокрого носа до кончика хвоста. По размеру куны сопоставимы
+                с евразийскими рысями — только чуть изящнее и легче. А что насчёт характера? Почему же многие их так боятся?</h5>
+            <br>
+            <h5 class="text-justify w-100">Тут, как говорится, у страха глаза велики. Лишние 10 килограмм не делают из обычной кошки кровожадного монстра!
+                Прожорливого — очень даже. Но порода не склонна к проявлению злости.
+                Более того, агрессивность считается недопустимым пороком — такие животные не участвуют в разведении!</h5>
+        </div>
 </div>
 {% endblock %}

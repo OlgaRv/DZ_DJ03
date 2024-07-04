@@ -20,3 +20,24 @@ footer {
     color: blue;
 }
 
+.page-background {
+    background-color: #B0E0E6; /* светлый серый фон #f8f9f */
+    padding: 20px; /* отступы вокруг содержимого */
+    border-radius: 5px; /* скругленные углы */
+}
+
+/* Дополнительные стили для карточек */
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* тень для карточек */
+}
+.card-body {
+    padding: 20px; /* Отступы внутри карточки */
+}
+
+.card-text {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.text-justify {
+    text-align: justify;
+}
