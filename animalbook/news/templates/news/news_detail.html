@@ -1,0 +1,10 @@
+{% extends 'mainecoon/base.html' %}
+
+{% block title %}{{ news_item.title }}{% endblock %}
+
+{% block content %}
+    <h1>{{ news_item.title }}</h1>
+    <p>{{ news_item.short_description }}</p>
+    <p>{{ news_item.text }}</p>
+    <p>Posted by {{ news_item.user.username }} on {{ news_item.pub_date }}</p>
+{% endblock %}

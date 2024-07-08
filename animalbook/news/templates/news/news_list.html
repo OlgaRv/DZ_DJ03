@@ -1,0 +1,16 @@
+{% extends 'mainecoon/base.html' %}
+
+{% block title %}Новости{% endblock %}
+
+{% block content %}
+    <h1>Новости из мира животных</h1>
+    <ul>
+        {% for news_item in news %}
+            <li>
+                <a href="{% url 'news_detail' news_item.id %}">{{ news_item.title }}</a>
+                <p>{{ news_item.short_description }}</p>
+                <p>Posted by {{ news_item.user.username }} on {{ news_item.pub_date }}</p>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}
